@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import Anilink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
@@ -31,7 +31,9 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path}>{item.text}</Link>
+                <Anilink fade to={item.path}>
+                  {item.text}
+                </Anilink>
               </li>
             )
           })}
@@ -39,7 +41,12 @@ const Navbar = () => {
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {
             return (
-              <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {item.icon}
               </a>
             )
