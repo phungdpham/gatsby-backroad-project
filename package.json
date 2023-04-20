@@ -21,7 +21,7 @@
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-sass": "^2.1.23",
-    "gatsby-plugin-sharp": "^2.3.2",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-plugin-styled-components": "^3.1.13",
     "gatsby-plugin-transition-link": "^1.16.2",
     "gatsby-source-contentful": "^2.1.62",
